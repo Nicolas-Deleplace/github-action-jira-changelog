@@ -1,0 +1,21 @@
+name: 'Changelog Generator'
+description: 'Generate changelog with JIRA API'
+author: 'Nicolas Deleplace'
+runs:
+  using: 'node16'
+  main: 'main.js'
+inputs:
+  jira_host:
+    required: true
+  jira_mail:
+    required: true
+  jira_token:
+    required: true
+  from:
+    required: true
+  to: 
+    required: true
+
+outputs:
+  changelog:
+    description: 'Generated changelog'
